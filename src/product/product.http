@@ -1,0 +1,38 @@
+
+GET http://localhost:3000/product/16
+
+
+POST http://localhost:3000/product/
+Content-Type: application/json
+
+{
+  "name": "Produto Exemplo3",
+  "sku": "SKU-123",
+   "category": 1,
+  "description": "Nova Descrição do produto.",
+  "large_description": "Outra Descrição detalhada do produto.",
+  "price": 10.00,
+  "discount_price": 8.00,
+  "discount_percent": 10,
+  "is_new": true,
+  "image_link": "http://example.com/image3.jpg"
+}
+
+PUT http://localhost:3000/product/16
+Content-Type: application/json
+
+{
+  "name": "Produto Atualizado",
+  "sku": "SKU-123-ATUALIZADO",
+  "category": 1,
+  "description": "Descrição atualizada do produto.",
+  "large_description": "Descrição detalhada atualizada.",
+  "price": 15.00,
+  "discount_price": 12.00,
+  "discount_percent": 20,
+  "is_new": false,
+  "image_link": "http://example.com/image-atualizada.jpg"
+}
+
+
+DELETE http://localhost:3000/product/16
