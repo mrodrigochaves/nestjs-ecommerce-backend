@@ -1,85 +1,73 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+### Implementação do Projeto de Backend Ecommerce NestJS.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Aplicativo API back-end NestJS
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# 💻 Stacks utilizadas:
 
-## Description
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Nest](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-02569B?style=for-the-badge&logo=postgresql)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Sobre o Aplicativo
 
-## Project setup
+O NestJS E-commerce é um backend desenvolvido em NestJS que fornece uma API para gerenciamento de um e-commerce. Utilizando tecnologias modernas e robustas, como o banco de dados PostgreSql para armazenar os dados da API, o NestJS E-commerce oferece uma solução eficiente para gerenciar produtos, pedidos, usuários, entre outros. O código segue princípios sólidos de desenvolvimento, garantindo uma arquitetura escalável e de fácil manutenção.
 
-```bash
-$ npm install
-```
+Aqui você pode conferir [Front-End](https://github.com/mrodrigochaves/react-ecommerce-frontend)
 
-## Compile and run the project
+## Funcionalidades
 
-```bash
-# development
-$ npm run start
+Cadastro de Produtos: Permite adicionar novos produtos com informações como nome, descrição, preço, etc;
 
-# watch mode
-$ npm run start:dev
+Atualização de Produtos: Possibilita a atualização dos dados de um produto já cadastrado;
 
-# production mode
-$ npm run start:prod
-```
+Exclusão de Produtos: Permite a remoção de produtos cadastrados anteriormente;
 
-## Run tests
+Consulta de Produtos: Permite pesquisar e visualizar informações de produtos de forma rápida e intuitiva;
 
-```bash
-# unit tests
-$ npm run test
+## Sobre o Serviço REST
 
-# e2e tests
-$ npm run test:e2e
+O back-end REST foi implementado utilizando o framework NestJS com TypeScript e PostgreSQL. Ele suporta operações padrão de criação, leitura, atualização e exclusão (CRUD), com uma arquitetura modular e escalável.
 
-# test coverage
-$ npm run test:cov
-```
+## Experimente
 
-## Resources
+1.  Clone o repositório
 
-Check out a few resources that may come in handy when working with NestJS:
+    Abra o terminal e execute o comando para clonar o projeto:
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+        git clone https://github.com/mrodrigochaves/nestjs-ecommerce-backend
 
-## Support
+2.  Acesse a pasta do projeto
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+    Entre no diretório do projeto recém-clonado:
 
-## Stay in touch
+        cd nestjs-ecommerce-backend
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+3.  Instale dependências
 
-## License
+    Você pode utilizar o gerenciador de pacotes npm,ou yarn.
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+- Se for usar npm:
+
+      npm install
+
+- Se for usar yarn:
+
+      yarn install
+
+4.  Iniciar o servidor
+
+    Depois de configurar o ambiente e instalar as dependências, inicie o servidor NestJS:
+
+    Usando npm:
+
+         npm run start
+
+    Usando yarn:
+
+         yarn start
+
+5.  Configure as Variáveis de Ambiente
+
+    Crie e configure um arquivo .env com as variáveis de ambiente necessárias, como detalhes do banco de dados, chaves API, entre outras.
+
+6.  Acessando a aplicação
+
+    O servidor NestJS estará rodando em http://localhost:3000
