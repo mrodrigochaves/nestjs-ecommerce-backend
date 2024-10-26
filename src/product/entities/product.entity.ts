@@ -1,6 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn, ManyToOne, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn, ManyToOne, CreateDateColumn, UpdateDateColumn, JoinColumn } from 'typeorm';
 import { Category } from '../../category/entities/category.entity';
-
 
 @Entity()
 export class Product {
@@ -13,7 +12,11 @@ export class Product {
   @Column({ length: 10 })
   sku: string;
 
-  @ManyToOne(() => Category, category => category.products)
+  @Column({ name: 'categoryId' }) // Alterado para match com o diagrama ER
+  category_id: number;
+
+  @ManyToOne(() => Category, category => category.products) // Corrigido para products
+  @JoinColumn({ name: 'categoryId' }) // Adicionado JoinColumn
   category: Category;
 
   @Column({ length: 250 })
@@ -22,10 +25,10 @@ export class Product {
   @Column({ length: 500 })
   large_description: string;
 
-  @Column('decimal')
+  @Column('decimal', { precision: 10, scale: 2 }) // Adicionado precision e scale
   price: number;
 
-  @Column('decimal', { nullable: true })
+  @Column('decimal', { precision: 10, scale: 2, nullable: true })
   discount_price: number;
 
   @Column({ nullable: true })
@@ -40,8 +43,6 @@ export class Product {
   @Column({ length: 1000, nullable: true })
   other_images_link: string;
 
-  @Column()
-  
   @CreateDateColumn({ type: 'timestamp' })
   created_date: Date;
 
