@@ -14,14 +14,14 @@ import { Category } from './category/entities/category.entity';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: process.env.DB_TYPE as 'postgres',
-      host: process.env.DB_HOST,
-      port: parseInt(process.env.DB_PORT, 10),
-      username: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
+      type: "postgres",
+      host: "45.136.16.12",
+      port: 5432,
+      username: "postgres",
+      password: "IVetyPsToR",
+      database: "postgres",
       entities: [Product, Category],
-      synchronize: true,
+      synchronize: false,
     }),
     TypeOrmModule.forFeature([Product, Category]),
   ],
